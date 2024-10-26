@@ -1,0 +1,211 @@
+/* Import Futura font */
+@import url('https://fonts.googleapis.com/css2?family=Futura:wght@300&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Futura', sans-serif !important;
+}
+
+/* Main container styles */
+.stApp {
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: rgba(14, 17, 23, 0.45);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+/* Sidebar title */
+.css-1d391kg .css-1629p8f h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* Custom navigation buttons */
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    text-align: left;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-button.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-button i {
+    margin-right: 10px;
+}
+
+/* Main content area */
+.main-content {
+    padding: 2rem;
+    color: white;
+}
+
+/* Cards styling */
+.stCard {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+#starfield-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Input fields styling */
+.stTextInput,
+.stNumberInput {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: white;
+    padding: 8px 12px;
+}
+
+/* File uploader styling */
+.stFileUploader {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Metrics styling */
+.stMetric {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.stMetric .metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3197f9;
+}
+
+/* Tabs styling */
+.stTabs {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.stTab {
+    color: white;
+    background: transparent;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.stTab:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.stTab[aria-selected="true"] {
+    background: #3197f9;
+    color: white;
+}
+
+/* Interactive background container */
+#starfield-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.stButton > button {
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f0f2f6;
+    color: #31333F;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;  /* Add rounded corners */
+}
+
+.stButton > button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.stButton > button:focus {
+    box-shadow: none;
+    outline: none;
+}
